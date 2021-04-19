@@ -130,7 +130,7 @@ int	ft_strlen(char *s)
 	return i;
 }
 
-int	main()
+int	main(void)
 {
 	char str[] = "Este ejercicio es chunguisimo y me estoy desesperndo \f\n\v\r\a";
 	ft_print_memory(str, ft_strlen(str));
