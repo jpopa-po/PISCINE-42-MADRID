@@ -1,0 +1,5 @@
+Credentials cache: API:47232B2B-DF75-42C5-811F-796CC581100C
+        Principal: jpopa-po@42MADRID.COM
+
+  Issued                Expires               Principal
+Apr  7 15:58:50 2021  Apr  8 01:58:50 2021  krbtgt/42MADRID.COM@42MADRID.COM
