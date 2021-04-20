@@ -6,7 +6,7 @@
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/18 16:55:50 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/18 19:51:59 by jpopa-po         ###   ########.fr       */
+/*   Updated: 2021/04/20 15:06:29 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strcapitalize(char *str)
 /*
 int	main(void)
 {
-	char str[] = "Hola+que+tal+estas? que guapo eres bro jeje";
+	char str[] = "Hola+que+tal+estas? qUe guUpo eres bro jeje";
 	printf("%s\n", ft_strcapitalize(str));
 }
 */

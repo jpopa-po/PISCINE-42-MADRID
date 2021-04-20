@@ -6,7 +6,7 @@
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/19 13:12:19 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/19 16:19:12 by jpopa-po         ###   ########.fr       */
+/*   Updated: 2021/04/20 17:44:52 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,9 +69,9 @@ void	ft_putstr_non_printable(char *str)
 			ft_putchar(str[b]);
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_putstr_non_printable("HOLA\n\bQUE TAL \t  \v \r");
 	return (0);
-}
+}*/

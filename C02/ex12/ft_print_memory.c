@@ -6,7 +6,7 @@
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/19 16:22:37 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/19 19:30:06 by jpopa-po         ###   ########.fr       */
+/*   Updated: 2021/04/20 15:06:25 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,7 +121,7 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	}
 	return (addr);
 }
-
+/*
 int	ft_strlen(char *s)
 {
 	int i = 0;
@@ -130,8 +130,8 @@ int	ft_strlen(char *s)
 	return i;
 }
 
-int	main()
+int	main(void)
 {
 	char str[] = "Este ejercicio es chunguisimo y me estoy desesperndo \f\n\v\r\a";
 	ft_print_memory(str, ft_strlen(str));
-}
+}*/

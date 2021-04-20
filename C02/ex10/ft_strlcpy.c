@@ -6,28 +6,34 @@
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/19 10:15:55 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/19 11:20:08 by jpopa-po         ###   ########.fr       */
+/*   Updated: 2021/04/20 17:44:57 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int	a;
-	unsigned int	b;
+	unsigned int	l;
+	unsigned int	i;
 
-	a = 0;
-	b = 0;
-	while (src[a] != '\0')
-		a++;
-	while ((src[b] != '\0') && b < (size - 1))
+	l = 0;
+	while (src[l] != '\0')
 	{
-		dest[b] = src[b];
-		b++;
+		++l;
 	}
-	dest[b] = '\0';
-	return (a);
+	if (size == 0)
+	{
+		return (l);
+	}
+	i = 0;
+	while (src[i] != '\0' && i < (size - 1))
+	{
+		dest[i] = src[i];
+		++i;
+	}
+	dest[i] = '\0';
+	return (l);
 }
-
+/*
 int	main(void)
 {
 	char	dest[50];
@@ -35,7 +41,7 @@ int	main(void)
 	int		size;
 
 	src = "esto es una cadena con 36 caracteres";
-	size = 100;
+	size = 1;
 	printf("%d\n", ft_strlcpy(dest, src, size));
 	printf("%s\n", dest);
-}
+}*/
