@@ -1,37 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 11:00:41 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/20 20:53:11 by jpopa-po         ###   ########.fr       */
+/*   Created: 2021/04/20 19:16:20 by jpopa-po          #+#    #+#             */
+/*   Updated: 2021/04/20 20:53:09 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strcat(char *dest, char *src)
 {
-	int	flag;
+	int	a;
+	int	b;
 
-	flag = 0;
-	while (s1[flag] != '\0' || s2[flag] != '\0')
+	a = 0;
+	b = 0;
+	while (src[a] != '\0')
+		a++;
+	while (src[b] != '\0')
 	{
-		if (s1[flag] != s2[flag])
-			return (s1[flag] - s2[flag]);
-		flag++;
+		dest[a + b] = src[b];
+		b++;
 	}
-	return (0);
+	dest[a + b] = '\0';
+	return (dest);
 }
 /*
 int	main(void)
 {
-	char *str1 = "holaaba";
-	char *str2 = "hola";
+	char	src[50] = "hola";
+	char	dest[50] = "Dest";
 
-	printf("mio: %d\n", ft_strcmp(str1, str2));
-	printf("original: %d", strcmp(str1, str2));
+	ft_strcat(dest, src);
+	printf("Resultado : %s", dest);
 }*/
