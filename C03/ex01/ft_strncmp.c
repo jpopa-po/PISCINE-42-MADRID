@@ -5,18 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 17:51:02 by jpopa-po          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/04/21 10:33:14 by jpopa-po         ###   ########.fr       */
-=======
-/*   Updated: 2021/04/20 20:53:10 by jpopa-po         ###   ########.fr       */
->>>>>>> 07ebbc6bd164642234a510eb3abb76940f1f0b43
+/*   Created: 2021/04/21 11:42:40 by jpopa-po          #+#    #+#             */
+/*   Updated: 2021/04/21 11:42:42 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-
 	unsigned int	a;
 
 	a = 0;
@@ -28,19 +23,6 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	if (a != n)
 		return (s1[a] - s2[a]);
-
-	unsigned int	flag;
-
-	flag = 0;
-	while (s1[flag] != '\0' && s2[flag] != '\0' && flag < n)
-	{
-		if (s1[flag] != s2[flag])
-			return (s1[flag] - s2[flag]);
-		++flag;
-	}
-	if (flag != n)
-		return (s1[flag] - s2[flag]);
-
 	return (0);
 }
 /*
