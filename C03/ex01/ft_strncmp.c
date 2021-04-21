@@ -16,7 +16,7 @@
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-<<<<<<< HEAD
+
 	unsigned int	a;
 
 	a = 0;
@@ -28,7 +28,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	if (a != n)
 		return (s1[a] - s2[a]);
-=======
+
 	unsigned int	flag;
 
 	flag = 0;
@@ -40,7 +40,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	}
 	if (flag != n)
 		return (s1[flag] - s2[flag]);
->>>>>>> 07ebbc6bd164642234a510eb3abb76940f1f0b43
+
 	return (0);
 }
 /*
