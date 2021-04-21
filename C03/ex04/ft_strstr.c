@@ -1,40 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 19:41:56 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/21 10:32:52 by jpopa-po         ###   ########.fr       */
+/*   Created: 2021/04/21 00:01:49 by marvin            #+#    #+#             */
+/*   Updated: 2021/04/21 10:32:26 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
+char	*ft_strstr(char *str, char *to_find)
 {
-	int				j;
-	unsigned int	n;
+	int	i;
+	int	j;
 
-	j = 0;
-	n = 0;
-	while (dest[j] != '\0')
-		j++;
-	while (n < nb && src[n] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		dest[j] = src[n];
-		j++;
-		n++;
+		j = 0;
+		while (to_find[j] == str[i + j])
+		{
+			if (to_find[j + 1] == '\0')
+			{
+				return (str + i);
+			}
+			j++;
+		}
+		i++;
 	}
-	dest[j] = '\0';
-	return (dest);
+	return (0);
 }
 /*
 int	main(void)
 {
-	char	src[50] = "hola";
-	char	dest[50] = "Dest";
-
-	ft_strncat(dest, src, 10);
-	printf("Resultado : %s", dest);
-}
-*/
+	char str[] = "HOLALALAQUEJAJAYUPI";
+	char find[] = "YUPI";
+	printf("%s", ft_strstr(str, find));
+	return (0);
+}*/

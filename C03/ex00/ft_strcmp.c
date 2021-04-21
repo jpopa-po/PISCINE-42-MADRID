@@ -6,7 +6,7 @@
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/20 11:00:41 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/20 20:53:11 by jpopa-po         ###   ########.fr       */
+/*   Updated: 2021/04/21 10:33:48 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int	flag;
+	int	a;
 
-	flag = 0;
-	while (s1[flag] != '\0' || s2[flag] != '\0')
+	a = 0;
+	while (s1[a] != '\0' || s2[a] != '\0')
 	{
-		if (s1[flag] != s2[flag])
-			return (s1[flag] - s2[flag]);
-		flag++;
+		if (s1[a] != s2[a])
+			return (s1[a] - s2[a]);
+		a++;
 	}
 	return (0);
 }
