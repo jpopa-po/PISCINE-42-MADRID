@@ -5,12 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 11:00:41 by jpopa-po          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/04/21 10:33:48 by jpopa-po         ###   ########.fr       */
-=======
-/*   Updated: 2021/04/20 20:53:11 by jpopa-po         ###   ########.fr       */
->>>>>>> 07ebbc6bd164642234a510eb3abb76940f1f0b43
+/*   Created: 2021/04/21 11:42:51 by jpopa-po          #+#    #+#             */
+/*   Updated: 2021/04/21 11:42:53 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +15,6 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-<<<<<<< HEAD
 	int	a;
 
 	a = 0;
@@ -28,16 +23,6 @@ int	ft_strcmp(char *s1, char *s2)
 		if (s1[a] != s2[a])
 			return (s1[a] - s2[a]);
 		a++;
-=======
-	int	flag;
-
-	flag = 0;
-	while (s1[flag] != '\0' || s2[flag] != '\0')
-	{
-		if (s1[flag] != s2[flag])
-			return (s1[flag] - s2[flag]);
-		flag++;
->>>>>>> 07ebbc6bd164642234a510eb3abb76940f1f0b43
 	}
 	return (0);
 }
