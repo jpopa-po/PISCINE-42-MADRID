@@ -125,8 +125,8 @@ void	*ft_print_memory(void *addr, unsigned int size)
 int	ft_strlen(char *s)
 {
 	int i = 0;
-	for (; s[i]; i++)
-		;
+	while (s[i])
+		i++;
 	return i;
 }
 
