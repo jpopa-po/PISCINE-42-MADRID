@@ -5,18 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/20 19:41:56 by jpopa-po          #+#    #+#             */
-
-/*   Updated: 2021/04/21 10:32:52 by jpopa-po         ###   ########.fr       */
-
-/*   Updated: 2021/04/20 20:53:04 by jpopa-po         ###   ########.fr       */
-
+/*   Created: 2021/04/21 11:42:06 by jpopa-po          #+#    #+#             */
+/*   Updated: 2021/04/21 11:42:13 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-
 	int				j;
 	unsigned int	n;
 
@@ -31,22 +26,6 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 		n++;
 	}
 	dest[j] = '\0';
-
-	int		i;
-	unsigned int	n;
-
-	i = 0;
-	n = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (n < nb && src[n] != '\0')
-	{
-		dest[i] = src[n];
-		i++;
-		n++;
-	}
-	dest[i] = '\0';
-
 	return (dest);
 }
 /*
