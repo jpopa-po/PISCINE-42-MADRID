@@ -6,36 +6,42 @@
 /*   By: jpopa-po <jpopa-po@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 11:42:19 by jpopa-po          #+#    #+#             */
-/*   Updated: 2021/04/21 11:42:21 by jpopa-po         ###   ########.fr       */
+/*   Updated: 2021/04/21 20:34:31 by jpopa-po         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
-	int	j;
+	int	aux;
 
-	i = 0;
-	while (str[i] != '\0')
+	if (*to_find == '\0')
+		return (str);
+	while (*str != '\0')
 	{
-		j = 0;
-		while (to_find[j] == str[i + j])
+		if (*str == *to_find)
 		{
-			if (to_find[j + 1] == '\0')
+			i = 0;
+			aux = 0;
+			while (to_find[i] != '\0')
 			{
-				return (str + i);
+				if (str[i] != to_find[i])
+					aux = 1;
+				i++;
 			}
-			j++;
+			if (aux == 0)
+				return (str);
 		}
-		i++;
+		str++;
 	}
 	return (0);
 }
-/*
-int	main(void)
+
+/*int	main(void)
 {
-	char str[] = "HOLALALAQUEJAJAYUPI";
-	char find[] = "YUPI";
-	printf("%s", ft_strstr(str, find));
+	char str[] = "HOLALALAQUEJAJAYUPIpapapapapap";
+	char find[] = "P";
+	printf("%s\n", ft_strstr(str, find));
+    printf("%s", strstr(str, find));
 	return (0);
 }*/
