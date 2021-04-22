@@ -28,6 +28,7 @@ char	*ft_strcat(char *dest, char *src)
 	dest[a] = '\0';
 	return (dest);
 }
+/*
 int	main(void)
 {
 	char	src[50] = "hola";
@@ -37,4 +38,4 @@ int	main(void)
 	printf("Resultado : %s", dest);
 	strcat(dest, src);
 	printf("Resultado : %s", dest);
-}
+}*/
