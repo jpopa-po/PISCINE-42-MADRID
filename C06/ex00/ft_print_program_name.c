@@ -15,13 +15,10 @@
 void	ft_putstr(char *str)
 {
 	int		a;
-	char	c;
 
 	a = -1;
 	while (str[++a])
 		write(1, &str[a], 1);
-	c = 10;
-	write(1, &c, 1);
 }
 
 int	main(int argc, char **argv)
