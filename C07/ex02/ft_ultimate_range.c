@@ -13,38 +13,35 @@
 #include <stdlib.h>
 int	ft_ultimate_range(int **range, int min, int max)
 {
+	int	*tab;
 	int	i;
-	int	len;
 
-	len = max - min;
 	if (min >= max)
-	{
-		*range = 0;
 		return (0);
-	}
-	if (!(*range = (int *)malloc(sizeof(int) * len)))
-		return (-1);
+	tab = (int *)malloc((max - min) * sizeof(int));
+	if (!tab)
+		return (0);
 	i = 0;
-	while (min < max)
+	while (min <= max - 1)
 	{
-		(*range)[i++] = min;
-		min++;
+		tab[i] = min++;
+		i++;
 	}
-	return (len);
+	*range = tab;
+	return (i);
 }
 /*
-int		main(void)
+int	main(void)
 {
 	int		*range;
 	int		i;
 
 	i = 0;
-	printf("%d\n", ft_ultimate_range(&range, -5, 50));
-	while (i < 55)
+	printf("%d\n", ft_ultimate_range(&range, -1, 10));
+	while (i < 11)
 	{
-	printf("%d\n", range[i]);
+		printf ("%d\n", range[i]);
 		i++;
 	}
 	return (0);
-}
-*/
+}*/

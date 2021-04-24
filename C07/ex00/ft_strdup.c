@@ -30,7 +30,8 @@ char	*ft_strdup(char *src)
 
 	len = ft_strlen(src);
 	i = 0;
-	if (!(cpy = (char*)malloc(sizeof(char) * len + 1)))
+	cpy = (char *)malloc(sizeof(char) * len + 1);
+	if (!cpy)
 		return (NULL);
 	while (len--)
 	{
