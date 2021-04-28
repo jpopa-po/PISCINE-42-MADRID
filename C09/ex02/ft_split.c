@@ -45,14 +45,14 @@ int	c_words(char *str, char *charset)
 	return (words);
 }
 
-void	put_word(char *dest, char *from, char *charset)
+void	put_word(char *dest, char *src, char *charset)
 {
 	int	i;
 
 	i = 0;
-	while (char_sep(from[i], charset) == 0)
+	while (char_sep(src[i], charset) == 0)
 	{
-		dest[i] = from[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
