@@ -12,7 +12,7 @@
 
 #include<unistd.h>
 
-void	ft_putchar(char c)
+void	ft_putchar2(char c)
 {
 	write(1, &c, 1);
 }
@@ -24,7 +24,7 @@ void	ft_putstr(char *str)
 	a = 0;
 	while (str[a] != '\0')
 	{
-		ft_putchar (str[a]);
+		ft_putchar2(str[a]);
 		a++;
 	}
 }
